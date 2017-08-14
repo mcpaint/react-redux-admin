@@ -1,11 +1,41 @@
-# Compiled class file
-*.class
+# Created by https://www.gitignore.io
 
-# Log file
+### Intellij ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+
+*.iml
 *.log
 
-# BlueJ files
-*.ctxt
+## Directory-based project format:
+.idea/
+.gradle/
+build/
+build_v1/
+build_v2/
+logs/
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+### Java ###
+*.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
@@ -14,9 +44,19 @@
 *.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+### react ###
+npm-debug.log*
+node_modules
+client/app/js/bundle.js
+client/app/js/bundle.min.js
+
+## ignore generated sources
+src/main/generated
+
+classes/
+
+logs/
